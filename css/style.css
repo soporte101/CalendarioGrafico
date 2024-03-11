@@ -1,0 +1,30 @@
+.evento::after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 26px;
+    right: 11px;
+}
+
+#calendario tbody tr td div a{
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendario .eventActive{
+    background: #4e50be;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* #calendario .eventActive{
+    color: #fff;
+} */

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="/SiteAssets/CalendarioGrafico/css/style.css" /> 
+
+    <script src="/SiteAssets/CalendarioGrafico/js/Tailwind/tailwind.js"></script>
+    <script src="/SiteAssets/CalendarioGrafico/js/Tailwind/tailwind.config.js"></script>
+</head>
+<body>
+   
+  <div class="flex items-center justify-center py-8 px-4">
+    <div class="max-w-sm w-full shadow-lg">
+        <div class="md:p-8 p-5 bg-white rounded-t">
+            <div class="px-4 flex items-center justify-between">
+              <span id="mesAnio" class="text-base font-bold text-gray-800"></span>
+                <div class="flex items-center">
+                    <button id="anterior" aria-label="calendar backward" class="focus:text-gray-400 hover:text-gray-400 text-gray-800 !border-0 !min-w-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="15 6 9 12 15 18" />
+                    </svg>
+                </button>
+                <button id="siguiente" aria-label="calendar forward" class="focus:text-gray-400 hover:text-gray-400 ml-3 text-gray-800 !border-0 !min-w-0"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler  icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <polyline points="9 6 15 12 9 18" />
+                    </svg>
+                </button>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-between pt-12 overflow-x-auto">
+              <table id="calendario" class="w-full">
+                <thead>
+                  <tr>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Mo</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Tu</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">We</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Th</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Fr</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Sa</p>
+                          </div>
+                      </th>
+                      <th>
+                          <div class="w-full flex justify-center">
+                              <p class="text-base font-medium text-center text-gray-800">Su</p>
+                          </div>
+                      </th>
+                  </tr>
+              </thead>
+                <!-- Aquí se llenará la tabla con JavaScript -->
+              </table>
+            </div>
+        </div>
+        <div class="md:py-8 py-5 md:px-10 px-5 bg-gray-50 rounded-b">
+            <div class="px-4" id="eventos">
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <script type="module" src="/SiteAssets/CalendarioGrafico/js/main.js"></script>	
+
+</body>
+</html>
